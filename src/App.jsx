@@ -45,7 +45,7 @@ function Cards({ category, data, from = 0, len = Math.PI * 2, radius = 5.25, onP
   return (
     <group {...props}>
       <Billboard position={[Math.sin(textPosition) * radius * 1.4, 0.5, Math.cos(textPosition) * radius * 1.4]}>
-        <Text font={suspend(inter).default} fontSize={0.25} anchorX="center" color="black">
+        <Text font={suspend(inter).default} fontSize={0.25} anchorX="center" color="white">
           {category}
         </Text>
       </Billboard>
