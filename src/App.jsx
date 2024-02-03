@@ -92,7 +92,7 @@ function ActiveCard({ hovered, ...props }) {
   })
   return (
     <Billboard {...props}>
-      <Text font={suspend(inter).default} fontSize={0.5} position={[2.15, 3.85, 0]} anchorX="left" color="black">
+      <Text font={suspend(inter).default} fontSize={1.5} position={[2.15, 3.85, 0]} anchorX="left" color="white">
         {hovered !== null && `${name}\n${hovered}`}
       </Text>
       <Image ref={ref} transparent position={[0, 1.5, 0]} url={`/img${Math.floor(hovered % 10) + 1}.jpg`}>
